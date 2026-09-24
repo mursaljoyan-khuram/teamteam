@@ -1,0 +1,178 @@
+.odoo-section {
+  width: 99%;
+  margin: auto;
+  min-height: 700px;
+
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  padding: 80px 5vw;
+
+    background: #dcd0d086;
+  color: #29282e;
+}
+
+
+
+
+.odoo-content {
+  max-width: 650px;
+}
+
+.odoo-label {
+  margin: 0 0 28px;
+
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #44434a;
+}
+
+.odoo-content h2 {
+  margin: 0;
+
+  font-size: clamp(35px, 3.2vw, 57px);
+  line-height: 1.02;
+  letter-spacing: -2.5px;
+  font-weight: 300;
+}
+
+.odoo-content h2 em {
+  font-style: italic;
+  font-weight: 300;
+  color: rgb(131, 95, 151);
+}
+
+
+
+
+.odoo-intro {
+  max-width: 600px;
+
+  margin: 32px 0 28px;
+
+  font-size: 16px;
+  line-height: 1.65;
+
+  color: #48474d;
+}
+
+
+
+.odoo-list {
+  max-width: 600px;
+
+  margin: 0;
+  padding-left: 25px;
+
+  color: #3e3d43;
+}
+
+.odoo-list li {
+  margin-bottom: 10px;
+  padding-left: 3px;
+
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+
+
+
+.odoo-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-top: 20px;
+  padding: 12px 18px;
+
+  border: 1px solid #bdbcc0;
+  border-radius: 30px;
+
+  background: transparent;
+
+  font-size: 14px;
+  color: #29282e;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.odoo-button span {
+  font-size: 17px;
+}
+
+.odoo-button:hover {
+  background: #29282e;
+  color: white;
+}
+
+
+
+
+.odoo-image {
+
+  align-items: center;
+  justify-content: center;
+
+  padding-left: 20px;
+}
+
+.odoo-image img {
+  width: 100%;
+  max-width: 750px;
+
+  height: auto;
+
+  display: block;
+}
+
+
+
+@media (max-width: 1000px) {
+  .odoo-section {
+    grid-template-columns: 1fr;
+
+    padding: 70px 6vw;
+  }
+
+  .odoo-content {
+    max-width: 750px;
+  }
+
+  .odoo-image {
+    padding: 50px 0 0;
+  }
+
+  .odoo-image img {
+    max-width: 700px;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .odoo-section {
+    padding: 50px 25px;
+  }
+
+  .odoo-content h2 {
+    font-size: 44px;
+    letter-spacing: -2px;
+  }
+
+  .odoo-intro {
+    font-size: 15px;
+  }
+
+  .odoo-list li {
+    font-size: 15px;
+  }
+
+  .odoo-image {
+    padding-top: 45px;
+  }
+}

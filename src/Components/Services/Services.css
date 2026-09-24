@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+}
+
+.services {
+  width: 97%;
+  margin: auto;
+  padding: 70px 4.5vw 80px;
+  background: #fff;
+  color: #24232a;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.services-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-bottom: 70px;
+}
+
+.eyebrow {
+  margin: 0 0 25px;
+
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  color: #44434a;
+}
+
+.services-header h2 {
+  margin: 0;
+
+  font-size: clamp(48px, 4.3vw, 70px);
+  line-height: 0.98;
+  font-weight: 400;
+  letter-spacing: -2.5px;
+}
+
+.services-header h2 em {
+  font-style: italic;
+  font-weight: 300;
+  color: rgb(106, 79, 135);
+}
+
+.services-intro {
+  width: 410px;
+  margin: 48px 35px 0 30px;
+
+  font-size: 16px;
+  line-height: 1.65;
+  color: #35343a;
+}
+
+/* =========================
+   SERVICES GRID
+========================= */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  border: 1px solid #aaa9ad;
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.service-card {
+  min-height: 310px;
+  padding: 38px 38px 35px;
+
+  border-right: 1px solid #aaa9ad;
+  border-bottom: 1px solid #aaa9ad;
+
+  position: relative;
+}
+
+/* Remove right border from every 3rd card */
+.service-card:nth-child(3n) {
+  border-right: none;
+}
+
+/* Remove bottom border from last row */
+.service-card:nth-child(n + 4) {
+  border-bottom: none;
+}
+
+.card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin-bottom: 26px;
+}
+
+.service-label {
+  margin: 0;
+
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+  color: #47464c;
+}
+
+/* =========================
+   ARROW
+========================= */
+
+.arrow-button {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: -5px;
+
+  border: 1px solid #b8b7bb;
+  border-radius: 50%;
+
+  background: transparent;
+
+  font-size: 18px;
+  font-weight: 300;
+  color: #25242a;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.arrow-button:hover {
+  background: #24232a;
+  color: white;
+}
+
+/* =========================
+   CARD TEXT
+========================= */
+
+.service-card h3 {
+  margin: 0 0 20px;
+
+  font-size: 27px;
+  line-height: 1.15;
+  font-weight: 400;
+  letter-spacing: -0.8px;
+}
+
+.service-description {
+  max-width: 430px;
+
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 1.65;
+
+  color: #44434a;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+  .services {
+    padding: 60px 30px;
+  }
+
+  .services-header {
+    gap: 40px;
+  }
+
+  .services-intro {
+    width: 350px;
+    margin-right: 0;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-card:nth-child(3n) {
+    border-right: 1px solid #aaa9ad;
+  }
+
+  .service-card:nth-child(2n) {
+    border-right: none;
+  }
+
+  .service-card:nth-child(n + 5) {
+    border-bottom: none;
+  }
+
+  .service-card:nth-child(4) {
+    border-bottom: 1px solid #aaa9ad;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+  .services {
+    padding: 50px 20px;
+  }
+
+  .services-header {
+    display: block;
+    margin-bottom: 45px;
+  }
+
+  .eyebrow {
+    margin-bottom: 18px;
+  }
+
+  .services-header h2 {
+    font-size: 48px;
+    letter-spacing: -2px;
+  }
+
+  .services-intro {
+    width: auto;
+    margin: 30px 0 0;
+
+    font-size: 15px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    min-height: auto;
+    padding: 30px 25px;
+    border-right: none !important;
+    border-bottom: 1px solid #aaa9ad !important;
+  }
+
+  .service-card:last-child {
+    border-bottom: none !important;
+  }
+
+  .service-card h3 {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,205 @@
+.trusted-section {
+  width: 100%;
+  background: #eae8e8;
+
+  padding: 42px 0 38px;
+
+  overflow: hidden;
+
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.trusted-title {
+  margin: 0 0 10px;
+
+  text-align: center;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  color: #888888;
+}
+
+
+/* =========================
+   SLIDER
+========================= */
+
+.logo-slider {
+  width: 100%;
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+
+/* =========================
+   MOVING TRACK
+========================= */
+
+.logo-track {
+  display: flex;
+  align-items: center;
+
+  width: max-content;
+
+  animation: moveLogos 28s linear infinite;
+}
+
+
+/* =========================
+   LOGO BOX
+========================= */
+
+.logo-box {
+  width: 180px;
+  height: 65px;
+
+  margin: 0 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================
+   LOGOS
+========================= */
+
+.logo-box img {
+  width: auto;
+  max-width: 135px;
+  max-height: 50px;
+
+  object-fit: contain;
+
+  opacity: 0.72;
+
+  filter: grayscale(15%);
+
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease,
+    filter 0.35s ease;
+}
+
+
+/* =========================
+   HOVER
+========================= */
+
+.logo-box:hover img {
+  opacity: 1;
+
+  filter: grayscale(0%);
+
+  transform: scale(1.12);
+}
+
+
+/* =========================
+   INFINITE ANIMATION
+========================= */
+
+@keyframes moveLogos {
+
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+
+}
+
+
+/* =========================
+   PAUSE ON HOVER
+========================= */
+
+.logo-slider:hover .logo-track {
+  animation-play-state: paused;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .logo-box {
+    width: 150px;
+  }
+
+  .logo-box img {
+    max-width: 115px;
+    max-height: 48px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .trusted-section {
+    padding: 35px 0 30px;
+  }
+
+  .trusted-title {
+    font-size: 10px;
+
+    letter-spacing: 1.4px;
+
+    margin-bottom: 22px;
+  }
+
+  .logo-box {
+    width: 125px;
+    height: 65px;
+
+    margin: 0 5px;
+  }
+
+  .logo-box img {
+    max-width: 95px;
+    max-height: 42px;
+  }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+  .logo-box {
+    width: 110px;
+  }
+
+  .logo-box img {
+    max-width: 85px;
+  }
+
+}

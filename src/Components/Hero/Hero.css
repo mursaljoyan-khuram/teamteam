@@ -1,0 +1,190 @@
+.hero {
+  width: 100%;
+  margin: auto;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 7%;
+  gap: 30px;
+  background: white;
+  overflow: hidden;
+}
+
+.hero-left {
+  width: 50%;
+  min-width: 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* LEFT SIDE */
+
+.hero-left {
+  width: 50%;
+}
+
+.hero-badge {
+  display: inline-block;
+  border: 1px solid #e8e4eb;
+  border-radius: 30px;
+  padding: 9px 16px;
+  font-size: 11px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.hero-left h1 {
+  font-size: clamp(46px, 5vw, 72px);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -2px;
+  color: #303036;
+}
+
+.hero-left h1 span {
+  color: #765b86;
+}
+
+.hero-description {
+  max-width: 490px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #777;
+  margin-top: 25px;
+}
+
+/* BUTTONS */
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.primary-btn {
+  background: #604679;
+  color: white;
+  padding: 13px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.secondary-btn {
+  color: #555;
+  border: 1px solid #e5e5e5;
+  padding: 13px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+/* STATS */
+
+.hero-stats {
+  display: flex;
+  gap: 45px;
+  margin-top: 40px;
+}
+
+.hero-stats h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+}
+
+.hero-stats p {
+  font-size: 14px;
+  color: #999;
+  margin-top: 5px;
+}
+
+/* RIGHT SIDE */
+
+.hero-right {
+  width: 62%;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.odoo-image {
+
+  width: 1000px;
+  max-width: 799px;
+  height: auto;
+
+}
+
+
+
+
+
+@media (max-width: 900px) {
+
+  .hero {
+    flex-direction: column;
+    padding: 40px 5%;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .hero-left h1 {
+    font-size: 42px;
+  }
+
+  .hero-right {
+    margin-top: 40px;
+  }
+
+  .odoo-diagram {
+    transform: scale(0.85);
+    transform-origin: center;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .hero-left h1 {
+    font-size: 35px;
+  }
+
+  .hero-buttons {
+    flex-wrap: wrap;
+  }
+
+  .hero-stats {
+    gap: 20px;
+  }
+
+  .odoo-diagram {
+    transform: scale(0.65);
+    flex-shrink: 0;
+    margin: -65px 0;
+  }
+
+}
+
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .odoo-image {
+    max-width: 500px;
+  }
+}

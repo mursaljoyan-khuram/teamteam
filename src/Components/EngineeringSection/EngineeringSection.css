@@ -1,0 +1,198 @@
+
+.engineering-section {
+  width: 100%;
+  min-height: 700px;
+
+  display: flex;
+  gap: 10px;
+
+  align-items: center;
+
+  padding: 80px 5vw;
+
+  background: #dcd0d086;
+  color: #29282e;
+}
+
+
+/* =========================
+   LEFT CONTENT
+========================= */
+
+.engineering-content {
+  max-width: 650px;
+}
+
+.engineering-label {
+  margin: 0 0 28px;
+
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+
+  color: #44434a;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.engineering-content h2 {
+  margin: 0;
+
+  font-size: clamp(35px, 3.2vw, 57px);
+  line-height: 1.02;
+
+  font-weight: 300;
+  letter-spacing: -2.5px;
+}
+
+.engineering-content h2 em {
+  font-style: italic;
+  font-weight: 300;
+  color: rgb(121, 78, 135);
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.engineering-intro {
+  max-width: 610px;
+
+  margin: 30px 0 28px;
+
+  font-size: 16px;
+  line-height: 1.65;
+
+  color: #48474d;
+}
+
+
+/* =========================
+   LIST
+========================= */
+
+.engineering-list {
+  max-width: 620px;
+
+  margin: 0;
+  padding-left: 25px;
+
+  color: #44434a;
+}
+
+.engineering-list li {
+  margin-bottom: 11px;
+  padding-left: 3px;
+
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.engineering-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-top: 20px;
+  padding: 12px 18px;
+
+  border: 1px solid #bdbcc0;
+  border-radius: 30px;
+
+  background: transparent;
+
+  font-size: 14px;
+  color: #29282e;
+
+  transition: 0.2s ease;
+}
+
+.engineering-button span {
+  font-size: 17px;
+}
+
+.engineering-button:hover {
+  background: #29282e;
+  color: white;
+}
+
+
+/* =========================
+   RIGHT IMAGE
+========================= */
+
+.engineering-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-left: 30px;
+}
+
+.engineering-image img {
+
+
+  width: 100%;
+  max-width: 800px;
+
+  height: auto;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+  .engineering-section {
+    grid-template-columns: 1fr;
+
+    padding: 70px 6vw;
+  }
+
+  .engineering-content {
+    max-width: 750px;
+  }
+
+  .engineering-image {
+    padding: 55px 0 0;
+  }
+
+  .engineering-image img {
+    max-width: 750px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .engineering-section {
+    padding: 50px 25px;
+  }
+
+  .engineering-content h2 {
+    font-size: 44px;
+    letter-spacing: -2px;
+  }
+
+  .engineering-intro,
+  .engineering-list li {
+    font-size: 15px;
+  }
+
+  .engineering-image {
+    padding-top: 40px;
+  }
+}
