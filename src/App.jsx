@@ -21,11 +21,6 @@ import Industries from "./Indestries/Indestries";
    <Hero/>
    <TrustedBy/>
    <Industries/>
-   
-
-
-   
-    
   </div>
   )
  }
