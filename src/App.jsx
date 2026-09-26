@@ -4,6 +4,7 @@ import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
 
 import TrustedBy from "./Components/Trusted/TrustedBy";
+import Industries from "./Indestries/Indestries";
 
 
 
@@ -19,6 +20,7 @@ import TrustedBy from "./Components/Trusted/TrustedBy";
    <Navbar/>
    <Hero/>
    <TrustedBy/>
+   <Industries/>
    
 
 

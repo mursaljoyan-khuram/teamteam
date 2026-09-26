@@ -1,0 +1,248 @@
+.industries {
+  width: 100%;
+  padding: 80px 8vw 90px;
+
+  background: #fff;
+  color: #29282e;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.industries-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding-bottom: 65px;
+}
+
+.industries-label {
+  margin: 0 0 28px;
+
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+
+  color: #45444a;
+}
+
+.industries-header h2 {
+  margin: 0;
+
+  font-size: clamp(48px, 3.9vw, 78px);
+  line-height: 1;
+  letter-spacing: -2.5px;
+
+  font-weight: 300;
+}
+
+.industries-header h2 em {
+  font-style: italic;
+  font-weight: 300;
+  color: #8a6399;
+}
+
+.industries-intro {
+  width: 500px;
+
+  margin: 65px 20px 0 40px;
+
+  font-size: 16px;
+  line-height: 1.6;
+
+  color: #46454b;
+}
+
+
+/* =========================
+   INDUSTRY LIST
+========================= */
+
+.industries-list {
+  width: 100%;
+
+  border-top: 1px solid #aaa9ad;
+}
+
+
+/* =========================
+   ROW
+========================= */
+
+.industry-row {
+  min-height: 125px;
+
+  display: grid;
+
+  grid-template-columns: 80px 280px 1fr 50px;
+
+  align-items: center;
+
+  border-bottom: 1px solid #aaa9ad;
+}
+
+
+/* Number */
+
+.industry-number {
+  font-size: 11px;
+  letter-spacing: 1px;
+
+  color: #55545a;
+}
+
+
+/* Title */
+
+.industry-row h3 {
+  margin: 0;
+
+  font-size: 28px;
+  line-height: 1.35;
+
+  font-weight: 400;
+  letter-spacing: -0.7px;
+}
+
+
+/* Description */
+
+.industry-row p {
+  max-width: 600px;
+
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 1.45;
+
+  color: #45444a;
+}
+
+
+/* =========================
+   ARROW
+========================= */
+
+.industry-arrow {
+  justify-self: end;
+
+  border: none;
+  background: transparent;
+
+  font-size: 20px;
+  font-weight: 300;
+
+  color: #77767b;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.industry-arrow:hover {
+  color: #222;
+  transform: translate(3px, -3px);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+  .industries {
+    padding: 65px 5vw 75px;
+  }
+
+  .industries-header {
+    gap: 40px;
+  }
+
+  .industries-intro {
+    width: 400px;
+    margin-right: 0;
+  }
+
+  .industry-row {
+    grid-template-columns: 60px 240px 1fr 40px;
+  }
+
+  .industry-row h3 {
+    font-size: 23px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .industries {
+    padding: 55px 25px 65px;
+  }
+
+  .industries-header {
+    display: block;
+
+    padding-bottom: 45px;
+  }
+
+  .industries-header h2 {
+    font-size: 46px;
+    letter-spacing: -2px;
+  }
+
+  .industries-intro {
+    width: auto;
+
+    margin: 30px 0 0;
+
+    font-size: 15px;
+  }
+
+
+  /* Turn rows into a simple 2-column layout */
+
+  .industry-row {
+    min-height: auto;
+
+    grid-template-columns: 45px 1fr 35px;
+
+    padding: 25px 0;
+
+    align-items: start;
+  }
+
+  .industry-number {
+    padding-top: 5px;
+  }
+
+  .industry-row h3 {
+    font-size: 23px;
+    line-height: 1.2;
+  }
+
+  .industry-row p {
+    grid-column: 2 / 3;
+
+    margin-top: 15px;
+
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .industry-arrow {
+    grid-column: 3;
+    grid-row: 1;
+
+    padding: 0;
+  }
+
+}
